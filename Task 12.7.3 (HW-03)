@@ -1,0 +1,13 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+money = float(input("Введите сумму вклада: "))
+per_cent_list = list(per_cent.values())
+# d1 = money * per_cent_list[0]/100
+# d2 = money * per_cent_list[1]/100
+# d3 = money * per_cent_list[2]/100
+# d4 = money * per_cent_list[3]/100
+# deposit = [d1, d2, d3, d4]
+deposit = [money * per_cent_list[0]/100, money * per_cent_list[1]/100,
+           money * per_cent_list[2]/100, money * per_cent_list[3]/100]
+print(deposit)
+deposit.sort()
+print("Максимальная сумма, которую вы можете заработать - ", deposit[-1])
